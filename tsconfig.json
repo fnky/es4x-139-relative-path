@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2019",
+    "lib": ["dom", "esnext"],
+    "outDir": "dist",
+    "baseUrl": ".",
+    "strict": true,
+    "sourceMap": false,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "plugins": []
+  },
+  "include": ["src", "types"]
+}

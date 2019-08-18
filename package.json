@@ -1,0 +1,28 @@
+{
+  "name": "empty",
+  "version": "1.0.0",
+  "description": "This is a ES4X empty project.",
+  "main": "./dist/index.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "es4x-launcher test js:index.test.js",
+    "postinstall": "es4x install",
+    "prestart": "# yarn build",
+    "start": "es4x-launcher",
+    "prebuild": "# rm -rf dist",
+    "build": "tsc",
+    "postbuild": "renamer --find '/.js$/' --replace '.mjs' './dist/**/*.js'",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vertx/core": "^3.7.1",
+    "@vertx/web": "^3.7.1"
+  },
+  "devDependencies": {
+    "renamer": "^1.1.2",
+    "typescript": "^3.5.3"
+  }
+}
